@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="crawler.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+</head>
+<body>
+    <form class="pure-form" id="touche">
+        <input type="text" id="url1" name="url1" required /> <input type="button" class="pure-button" id="initbutton" value="Initialize Crawler" onclick="initialize()" />
+        <input type="button" class="pure-button" id="stopbutton" value="Stop Crawler" onclick="end()" /> <span id="crawlerstatus"></span><br />
+        Example text would be http://www.cnn.com/
+    </form>
+    <div>RAM: <span id="cpuram"></span> :CPU</div>
+    <div id="test">
+        <input type="button" class="pure-button" id="clearqueue" value="Clear Queue" onclick="clearqueue()" />
+    </div>
+    <div id="crawler1"></div>
+    <h2>Total Urls Crawled</h2>
+    <div id="totalurls"></div>
+    <h2>Queue Size</h2>
+    <div id="queuesize"></div>
+    <h2>Table Size</h2>
+    <div id="tablesize"></div>
+    <h2>Title Count</h2>
+    <div id="titlecount"></div>
+    <h2>Last Title Crawled</h2>
+    <div id="lasttitle"></div>
+    <br />
+    <br />
+    <div id="index"><input type="text" id="indextable" required /> <input class="pure-button" type="button" id="indexbutton" value="Get Info" onclick="getFromTable()" /></div>
+    <div id="indexable"></div>
+    <h2>Last 10 Urls Crawled</h2>
+    <div id="urlten"></div>
+    <h2>Errors</h2>
+    <div id="errorten"></div>
+</body>
+</html>
